@@ -316,7 +316,7 @@ and let `Watch` close.
 
 #### Events
 
-If the  `<-obj.init.Done` channel closes, we should shutdown our resource. When
+If the  `<-obj.init.Done` channel closes, we should shutdown our resource.
 When we want to send an event, we use the `Event` helper function. This
 automatically marks the resource state as `dirty`. If you're unsure, it's not
 harmful to send the event. This will ultimately cause `CheckApply` to run. This
